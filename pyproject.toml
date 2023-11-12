@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "music-genai-app"
+version = "0.1.0"
+description = "Music Generative AI App with Python Backend and Gradio Frontend"
+authors = ["Serg Masis <smasis@hawk.iit.edu>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+xformers = "0.0.22.post7"
+audiocraft = {git = "https://github.com/facebookresearch/audiocraft.git"}
+ffmpeg-python = "^0.2.0"
+pytube = "^15.0.0"
+
+[tool.poetry.dev-dependencies]
+coverage = {extras = ["toml"], version = "7.2.*"}
+black = {version = "23.1.*", allow-prereleases = true}
+pytest = "^7.4.3"
+pytest-html = "^4.0.2"
+pytest-cov = "^4.1.0"
+pylint = "^3.0.2"
+mkdocs = "^1.5.3"
+mkdocstrings = {extras = ["python"], version = "^0.23"}
+mkdocs-material = "^9.4"
+python-decouple = "^3.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
