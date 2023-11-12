@@ -1,0 +1,3524 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../utils/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>MusicGen - Documentation to Music Gen AI App</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#music_generation.music_gen" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Documentation to Music Gen AI App" class="md-header__button md-logo" aria-label="Documentation to Music Gen AI App" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation to Music Gen AI App
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MusicGen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentation to Music Gen AI App" class="md-nav__button md-logo" aria-label="Documentation to Music Gen AI App" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Documentation to Music Gen AI App
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Music Gen AI App Docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MusicGen
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    MusicGen
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#music_generation.music_gen" class="md-nav__link">
+    music_gen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator" class="md-nav__link">
+    MusicGenerator
+  </a>
+  
+    <nav class="md-nav" aria-label="MusicGenerator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.cb_progress_bar" class="md-nav__link">
+    cb_progress_bar()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.cont_generate" class="md-nav__link">
+    cont_generate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.delete_model" class="md-nav__link">
+    delete_model()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.generate" class="md-nav__link">
+    generate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.load_model" class="md-nav__link">
+    load_model()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.melody_cond_generate" class="md-nav__link">
+    melody_cond_generate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.prepare_input_audio" class="md-nav__link">
+    prepare_input_audio()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.reset_progress_bar" class="md-nav__link">
+    reset_progress_bar()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.set_model_params" class="md-nav__link">
+    set_model_params()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.set_progress_bar_cb" class="md-nav__link">
+    set_progress_bar_cb()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.text_cond_generate" class="md-nav__link">
+    text_cond_generate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.uncond_generate" class="md-nav__link">
+    uncond_generate()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#music_generation.music_gen" class="md-nav__link">
+    music_gen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator" class="md-nav__link">
+    MusicGenerator
+  </a>
+  
+    <nav class="md-nav" aria-label="MusicGenerator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.cb_progress_bar" class="md-nav__link">
+    cb_progress_bar()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.cont_generate" class="md-nav__link">
+    cont_generate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.delete_model" class="md-nav__link">
+    delete_model()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.generate" class="md-nav__link">
+    generate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.load_model" class="md-nav__link">
+    load_model()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.melody_cond_generate" class="md-nav__link">
+    melody_cond_generate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.prepare_input_audio" class="md-nav__link">
+    prepare_input_audio()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.reset_progress_bar" class="md-nav__link">
+    reset_progress_bar()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.set_model_params" class="md-nav__link">
+    set_model_params()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.set_progress_bar_cb" class="md-nav__link">
+    set_progress_bar_cb()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.text_cond_generate" class="md-nav__link">
+    text_cond_generate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music_generation.music_gen.MusicGenerator.uncond_generate" class="md-nav__link">
+    uncond_generate()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>MusicGen</h1>
+
+<p>This is the reference to the functions contained in
+<code>music_gen</code>. For now, they are all accesible directly
+through <code>music-generation</code> and you don't
+need to use the <code>music_gen</code> namespace.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="music_generation.music_gen"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Music Generation Functionality</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+
+<h2 id="music_generation.music_gen.MusicGenerator" class="doc doc-heading">
+          <code>MusicGenerator</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Class for Music Generation</p>
+
+            <details class="quote">
+              <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span>
+<span class="normal">389</span>
+<span class="normal">390</span>
+<span class="normal">391</span>
+<span class="normal">392</span>
+<span class="normal">393</span>
+<span class="normal">394</span>
+<span class="normal">395</span>
+<span class="normal">396</span>
+<span class="normal">397</span>
+<span class="normal">398</span>
+<span class="normal">399</span>
+<span class="normal">400</span>
+<span class="normal">401</span>
+<span class="normal">402</span>
+<span class="normal">403</span>
+<span class="normal">404</span>
+<span class="normal">405</span>
+<span class="normal">406</span>
+<span class="normal">407</span>
+<span class="normal">408</span>
+<span class="normal">409</span>
+<span class="normal">410</span>
+<span class="normal">411</span>
+<span class="normal">412</span>
+<span class="normal">413</span>
+<span class="normal">414</span>
+<span class="normal">415</span>
+<span class="normal">416</span>
+<span class="normal">417</span>
+<span class="normal">418</span>
+<span class="normal">419</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">MusicGenerator</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Class for Music Generation&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">pretrained</span><span class="p">:</span><span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;small&#39;</span><span class="p">,</span><span class="s1">&#39;medium&#39;</span><span class="p">,</span><span class="s1">&#39;large&#39;</span><span class="p">,</span><span class="s1">&#39;melody&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">DEFAULT_MODEL</span><span class="p">,</span>
+            <span class="n">device</span><span class="p">:</span><span class="nb">str</span> <span class="o">=</span> <span class="n">DEVICE</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pretrained</span> <span class="o">=</span> <span class="n">pretrained</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">device</span> <span class="o">=</span> <span class="n">device</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loaded</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">load_error</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">load_model</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">pretrained</span><span class="p">:</span><span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;small&#39;</span><span class="p">,</span><span class="s1">&#39;medium&#39;</span><span class="p">,</span><span class="s1">&#39;large&#39;</span><span class="p">,</span><span class="s1">&#39;melody&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">device</span><span class="p">:</span><span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Load a pre-trained model for music generation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            pretrained (Literal[&#39;small&#39;,&#39;medium&#39;,&#39;large&#39;,&#39;melody&#39;], optional): The size of</span>
+<span class="sd">                                            the pre-trained model to load. Defaults to None.</span>
+<span class="sd">            device (str, optional): The device to use for model inference. Defaults to None.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if the model is successfully loaded, False otherwise.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">loaded</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">delete_model</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">pretrained</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pretrained</span> <span class="o">=</span> <span class="n">pretrained</span>
+        <span class="k">if</span> <span class="n">device</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">device</span> <span class="o">=</span> <span class="n">device</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">pt_fullname</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;facebook/musicgen-</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">pretrained</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">MusicGen</span><span class="o">.</span><span class="n">get_pretrained</span><span class="p">(</span><span class="n">pt_fullname</span><span class="p">,</span>\
+                                                <span class="n">device</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">device</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">loaded</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">load_error</span> <span class="o">=</span> <span class="n">err</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">loaded</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">loaded</span>
+
+    <span class="k">def</span> <span class="nf">delete_model</span><span class="p">(</span>
+            <span class="bp">self</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Deletes the model and frees up memory.</span>
+
+<span class="sd">        This function deletes the model object, performs garbage collection, empties the</span>
+<span class="sd">        CUDA cache, and resets the device, model, loaded flag, load error, and progress</span>
+<span class="sd">        bar attributes.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span>
+        <span class="n">gc</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
+        <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">empty_cache</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">device</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loaded</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">load_error</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">reset_progress_bar</span><span class="p">(</span>
+            <span class="bp">self</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Resets the progress bar.</span>
+
+<span class="sd">        This function resets the progress bar by setting the total value to 1 and updating the</span>
+<span class="sd">        description to &#39;Generating&#39;.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">dynamic_ncols</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>\
+                         <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;Generating&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">set_progress_bar_cb</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">callback</span><span class="p">:</span><span class="n">Callable</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Sets the progress bar callback function.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            callback (Callable, optional): The callback function to be set. Defaults to None.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">            set_progress_bar_cb(callback=my_callback_function)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">callback</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">reset_progress_bar</span><span class="p">()</span>
+            <span class="n">callback</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cb_progress_bar</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">set_custom_progress_callback</span><span class="p">(</span><span class="n">callback</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">cb_progress_bar</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">p</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span>
+            <span class="n">t</span><span class="p">:</span><span class="nb">int</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Updates the progress bar with the given progress and total values.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            p (int): The current progress value.</span>
+<span class="sd">            t (int): The total value.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If the progress bar is not initialized.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Progress Bar must be initialized first&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">total</span> <span class="o">!=</span> <span class="n">t</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">total</span> <span class="o">=</span> <span class="n">t</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">total</span> <span class="o">==</span> <span class="n">p</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">refresh</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">set_model_params</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">use_sample</span><span class="p">:</span><span class="nb">bool</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">top_k</span><span class="p">:</span><span class="nb">int</span> <span class="o">=</span> <span class="mi">250</span><span class="p">,</span>
+            <span class="n">top_p</span><span class="p">:</span><span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span>
+            <span class="n">temp</span><span class="p">:</span><span class="nb">float</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">duration</span><span class="p">:</span><span class="nb">int</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+            <span class="n">cfg_coef</span><span class="p">:</span><span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Sets the parameters for generating music using the model.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            use_sample (bool): Use sampling if True, else do argmax decoding. Defaults to True.</span>
+<span class="sd">            top_k (int): Top-k is a setting in text and music generation models that limits the</span>
+<span class="sd">                         number of choices (tokens) the model considers at each step. A smaller</span>
+<span class="sd">                         top-k leads to more predictable outputs, while a larger top-k allows</span>
+<span class="sd">                         for more variety. Defaults to 250.</span>
+<span class="sd">            top_p (float): Top-p, also called nucleus sampling, is a method in text generation</span>
+<span class="sd">                           where the model chooses from a set of tokens based on their combined</span>
+<span class="sd">                           likelihood, ensuring a balance between diversity and coherence in</span>
+<span class="sd">                           the output. Unlike top-k, which picks a fixed number of tokens,</span>
+<span class="sd">                           top-p&#39;s selection varies based on their probabilities. Defaults to</span>
+<span class="sd">                           0.0, when set to 0 top_k is used.</span>
+<span class="sd">            temp (float): Softmax temperature parameter. In music generation, the temperature</span>
+<span class="sd">                          setting controls how predictable or varied the music is. A higher</span>
+<span class="sd">                          temperature results in more random and diverse music, while a lower</span>
+<span class="sd">                          temperature creates more consistent and less varied music. Defaults</span>
+<span class="sd">                          to 1.0.</span>
+<span class="sd">            duration (int): Duration of the generated waveform. Defaults to 30.0.</span>
+<span class="sd">            cfg_coef (int): Coefficient used for classifier free guidance. This technique in</span>
+<span class="sd">                            music generation uses an additional classifier network to guide</span>
+<span class="sd">                            the music creation process towards specific characteristics or</span>
+<span class="sd">                            styles. It provides more detailed control, allowing users to</span>
+<span class="sd">                            influence the style and features of the generated music. Defaults</span>
+<span class="sd">                            to 3.0.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If the model is not loaded.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Model must be loaded first&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">set_generation_params</span><span class="p">(</span><span class="n">use_sample</span><span class="p">,</span> <span class="n">top_k</span><span class="p">,</span> <span class="n">top_p</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span>\
+                                            <span class="n">duration</span><span class="p">,</span> <span class="n">cfg_coef</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">text_cond_generate</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">prompt</span><span class="p">:</span><span class="nb">str</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Text conditional music generation using the loaded model.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            prompt (str): The prompt text for generating the waverform.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Tuple[int, np.ndarray]: A tuple containing the sample rate and the generated</span>
+<span class="sd">                                    waveform as a numpy array.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If the model is not loaded.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Model must be loaded first&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Generate music based on prompt</span>
+        <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">generate</span><span class="p">([</span><span class="n">prompt</span><span class="p">],</span> <span class="n">progress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">prepare_input_audio</span><span class="p">(</span>
+            <span class="n">input_audio</span><span class="p">:</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Prepares the input audio for further processing.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            input_audio (Tuple[int, np.ndarray], optional): A tuple containing the sample</span>
+<span class="sd">                                                            rate and waveform of the input</span>
+<span class="sd">                                                            audio. Defaults to None.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Tuple[int, np.ndarray]: A tuple containing the sample rate and processed</span>
+<span class="sd">                                    waveform.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            - If `input_audio` is not provided, the function returns a tuple with sample</span>
+<span class="sd">              rate 0 and waveform None.</span>
+<span class="sd">            - If `input_audio` is provided, the function converts the waveform to a torch</span>
+<span class="sd">              tensor and performs additional processing if necessary.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">input_audio</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="n">input_audio</span>
+            <span class="n">wav</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">wav</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">wav</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">torch</span><span class="o">.</span><span class="n">int16</span><span class="p">:</span>
+                <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">float</span><span class="p">()</span> <span class="o">/</span> <span class="mf">32767.0</span>
+            <span class="k">if</span> <span class="n">wav</span><span class="o">.</span><span class="n">dim</span><span class="p">()</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">wav</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span>
+
+        <span class="k">return</span> <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+
+    <span class="k">def</span> <span class="nf">melody_cond_generate</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">input_audio</span><span class="p">:</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">],</span>
+            <span class="n">prompt</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Melody conditional music generation on an input audio with the loaded model.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            input_audio (Tuple[int, np.ndarray]): The input audio as a tuple of sample</span>
+<span class="sd">                                                  rate and waveform.</span>
+<span class="sd">            prompt (Optional[str]): The prompt for generating the waveform. Defaults to</span>
+<span class="sd">                                    an empty string.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Tuple[int, np.ndarray]: A tuple containing the sample rate and the generated</span>
+<span class="sd">                                    melody waveform.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If the model is not loaded.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            - If no prompt is provided, it will be set to None.</span>
+<span class="sd">            - The input audio will be prepared using the MusicGenerator class.</span>
+<span class="sd">            - The generated melody will be conditioned on the input audio using the model&#39;s</span>
+<span class="sd">              generate_with_chroma method.</span>
+<span class="sd">            - The generated waveform will be converted to a numpy array.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Model must be loaded first&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">prompt</span><span class="p">:</span>
+            <span class="n">prompt</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="n">MusicGenerator</span><span class="o">.</span><span class="n">prepare_input_audio</span><span class="p">(</span><span class="n">input_audio</span><span class="p">)</span>
+        <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="p">[</span><span class="kc">None</span><span class="p">]</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="c1"># Generate music based on melody of existing clip (`wav`) and prompt</span>
+        <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">generate_with_chroma</span><span class="p">([</span><span class="n">prompt</span><span class="p">],</span> <span class="n">wav</span><span class="p">,</span>\
+                                              <span class="n">sample_rate</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+
+    <span class="k">def</span> <span class="nf">cont_generate</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">input_audio</span><span class="p">:</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">],</span>
+            <span class="n">prompt</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Generates a music continuation to an existing audio clip based on a prompt.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            input_audio (Tuple[int, np.ndarray]): The input audio clip as a tuple of</span>
+<span class="sd">                                                  sample rate and waveform.</span>
+<span class="sd">            prompt (Optional[str], optional): The prompt for generating the music</span>
+<span class="sd">                                              continuation. Defaults to &#39;&#39;.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Tuple[int, np.ndarray]: The sample rate and waveform of the generated</span>
+<span class="sd">                                    music continuation.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If the model is not loaded.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            - If no prompt is provided, the prompt will be set to None.</span>
+<span class="sd">            - The input audio clip is prepared using the `prepare_input_audio` method of the</span>
+<span class="sd">              `MusicGenerator` class.</span>
+<span class="sd">            - The generated music continuation is obtained by calling the `generate_continuation`</span>
+<span class="sd">              method of the model.</span>
+<span class="sd">            - The generated waveform is converted to a numpy array.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Model must be loaded first&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">prompt</span><span class="p">:</span>
+            <span class="n">prompt</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="n">MusicGenerator</span><span class="o">.</span><span class="n">prepare_input_audio</span><span class="p">(</span><span class="n">input_audio</span><span class="p">)</span>
+        <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="p">[</span><span class="kc">None</span><span class="p">]</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="c1"># Generate music continuation to existing clip (`wav`) based on prompt</span>
+        <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">generate_continuation</span><span class="p">(</span><span class="n">wav</span><span class="p">,</span> <span class="n">sample_rate</span><span class="p">,</span>\
+                                               <span class="p">[</span><span class="n">prompt</span><span class="p">],</span> <span class="n">progress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+
+    <span class="k">def</span> <span class="nf">uncond_generate</span><span class="p">(</span>
+            <span class="bp">self</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Generates music unconditionally.</span>
+
+<span class="sd">        This function generates music unconditionally using a pre-loaded model. It returns the</span>
+<span class="sd">        sample rate and the generated waveform.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Tuple[int, np.ndarray]: A tuple containing the sample rate (int) and the generated</span>
+<span class="sd">                                    waveform (np.ndarray).</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If the model is not loaded.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Model must be loaded first&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Generate music unconditionally (based on nothing)</span>
+        <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">generate_unconditional</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+
+    <span class="k">def</span> <span class="nf">generate</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">prompt</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+            <span class="n">input_audio</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">use_sample</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+            <span class="n">top_k</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="mi">250</span><span class="p">,</span>
+            <span class="n">top_p</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span>
+            <span class="n">temp</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">duration</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+            <span class="n">cfg_coef</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="n">progress</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Generate audio using the model.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            prompt (Optional[str]): The prompt text to generate audio from. Default is an empty</span>
+<span class="sd">                                    string.</span>
+<span class="sd">            input_audio (Optional[Tuple[int, np.ndarray]]): The input audio to condition the</span>
+<span class="sd">                                                            generation on. Default is None.</span>
+<span class="sd">            use_sample (Optional[bool]): Whether to use sampling during generation. Default is</span>
+<span class="sd">                                         True.</span>
+<span class="sd">            top_k (Optional[int]): The number of top tokens to consider during sampling. Default</span>
+<span class="sd">                                   is 250.</span>
+<span class="sd">            top_p (Optional[float]): The cumulative probability threshold for top-k sampling.</span>
+<span class="sd">                                     Default is 0.0.</span>
+<span class="sd">            temp (Optional[float]): The temperature value for sampling. Default is 1.</span>
+<span class="sd">            duration (Optional[int]): The duration of the generated audio in seconds. Default</span>
+<span class="sd">                                      is 8.</span>
+<span class="sd">            cfg_coef (Optional[int]): The coefficient for controlling the model configuration.</span>
+<span class="sd">                                      Default is 3.</span>
+<span class="sd">            progress (Optional[Callable]): A callback function to track the progress of</span>
+<span class="sd">                                          generation. Default is None.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Tuple[int, np.ndarray]: A tuple containing the sample rate and the generated</span>
+<span class="sd">                                    audio waveform.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_model_params</span><span class="p">(</span><span class="n">use_sample</span><span class="p">,</span> <span class="n">top_k</span><span class="p">,</span> <span class="n">top_p</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">cfg_coef</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">progress</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">def</span> <span class="nf">progress_callback</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+                <span class="n">progress</span><span class="p">((</span><span class="n">p</span><span class="p">,</span> <span class="n">t</span><span class="p">),</span> <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;Generating&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">progress_callback</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_progress_bar_cb</span><span class="p">(</span><span class="n">progress_callback</span><span class="p">)</span>
+
+        <span class="n">input_audio_not_none</span> <span class="o">=</span> <span class="n">input_audio</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+        <span class="k">if</span> <span class="n">input_audio_not_none</span> <span class="ow">and</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pretrained</span> <span class="o">==</span> <span class="s1">&#39;melody&#39;</span><span class="p">):</span>
+            <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">melody_cond_generate</span><span class="p">(</span><span class="n">input_audio</span><span class="p">,</span> <span class="n">prompt</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">input_audio_not_none</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">set_model_params</span><span class="p">(</span><span class="n">use_sample</span><span class="p">,</span> <span class="n">top_k</span><span class="p">,</span> <span class="n">top_p</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">cfg_coef</span><span class="p">)</span>
+            <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cont_generate</span><span class="p">(</span><span class="n">input_audio</span><span class="p">,</span> <span class="n">prompt</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="n">prompt</span><span class="p">:</span>
+            <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uncond_generate</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">text_cond_generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.cb_progress_bar" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">cb_progress_bar</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Updates the progress bar with the given progress and total values.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>p</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The current progress value.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>t</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The total value.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ValueError</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>If the progress bar is not initialized.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>None</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>None</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">cb_progress_bar</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">p</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span>
+        <span class="n">t</span><span class="p">:</span><span class="nb">int</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Updates the progress bar with the given progress and total values.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        p (int): The current progress value.</span>
+<span class="sd">        t (int): The total value.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValueError: If the progress bar is not initialized.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Progress Bar must be initialized first&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">total</span> <span class="o">!=</span> <span class="n">t</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">total</span> <span class="o">=</span> <span class="n">t</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">total</span> <span class="o">==</span> <span class="n">p</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span><span class="o">.</span><span class="n">refresh</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.cont_generate" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">cont_generate</span><span class="p">(</span><span class="n">input_audio</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Generates a music continuation to an existing audio clip based on a prompt.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>input_audio</code></td>
+          <td>
+                <code><span title="typing.Tuple">Tuple</span>[int, <span title="numpy.ndarray">ndarray</span>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The input audio clip as a tuple of
+                                  sample rate and waveform.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>prompt</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[str]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The prompt for generating the music
+                              continuation. Defaults to ''.</p>
+            </div>
+          </td>
+          <td>
+                <code>&#39;&#39;</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing.Tuple">Tuple</span>[int, <span title="numpy.ndarray">ndarray</span>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Tuple[int, np.ndarray]: The sample rate and waveform of the generated
+                    music continuation.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ValueError</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>If the model is not loaded.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<details class="note" open>
+  <summary>Note</summary>
+  <ul>
+<li>If no prompt is provided, the prompt will be set to None.</li>
+<li>The input audio clip is prepared using the <code>prepare_input_audio</code> method of the
+  <code>MusicGenerator</code> class.</li>
+<li>The generated music continuation is obtained by calling the <code>generate_continuation</code>
+  method of the model.</li>
+<li>The generated waveform is converted to a numpy array.</li>
+</ul>
+</details>
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">cont_generate</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">input_audio</span><span class="p">:</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">],</span>
+        <span class="n">prompt</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Generates a music continuation to an existing audio clip based on a prompt.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        input_audio (Tuple[int, np.ndarray]): The input audio clip as a tuple of</span>
+<span class="sd">                                              sample rate and waveform.</span>
+<span class="sd">        prompt (Optional[str], optional): The prompt for generating the music</span>
+<span class="sd">                                          continuation. Defaults to &#39;&#39;.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Tuple[int, np.ndarray]: The sample rate and waveform of the generated</span>
+<span class="sd">                                music continuation.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValueError: If the model is not loaded.</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        - If no prompt is provided, the prompt will be set to None.</span>
+<span class="sd">        - The input audio clip is prepared using the `prepare_input_audio` method of the</span>
+<span class="sd">          `MusicGenerator` class.</span>
+<span class="sd">        - The generated music continuation is obtained by calling the `generate_continuation`</span>
+<span class="sd">          method of the model.</span>
+<span class="sd">        - The generated waveform is converted to a numpy array.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Model must be loaded first&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">prompt</span><span class="p">:</span>
+        <span class="n">prompt</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="n">MusicGenerator</span><span class="o">.</span><span class="n">prepare_input_audio</span><span class="p">(</span><span class="n">input_audio</span><span class="p">)</span>
+    <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="p">[</span><span class="kc">None</span><span class="p">]</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1"># Generate music continuation to existing clip (`wav`) based on prompt</span>
+    <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">generate_continuation</span><span class="p">(</span><span class="n">wav</span><span class="p">,</span> <span class="n">sample_rate</span><span class="p">,</span>\
+                                           <span class="p">[</span><span class="n">prompt</span><span class="p">],</span> <span class="n">progress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.delete_model" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">delete_model</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Deletes the model and frees up memory.</p>
+<p>This function deletes the model object, performs garbage collection, empties the
+CUDA cache, and resets the device, model, loaded flag, load error, and progress
+bar attributes.</p>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>None</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>None</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">delete_model</span><span class="p">(</span>
+        <span class="bp">self</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Deletes the model and frees up memory.</span>
+
+<span class="sd">    This function deletes the model object, performs garbage collection, empties the</span>
+<span class="sd">    CUDA cache, and resets the device, model, loaded flag, load error, and progress</span>
+<span class="sd">    bar attributes.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span>
+    <span class="n">gc</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
+    <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">empty_cache</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">device</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">loaded</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">load_error</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.generate" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">generate</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">input_audio</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">use_sample</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">top_p</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">temp</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">cfg_coef</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Generate audio using the model.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>prompt</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[str]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The prompt text to generate audio from. Default is an empty
+                    string.</p>
+            </div>
+          </td>
+          <td>
+                <code>&#39;&#39;</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>input_audio</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[<span title="typing.Tuple">Tuple</span>[int, <span title="numpy.ndarray">ndarray</span>]]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The input audio to condition the
+                                            generation on. Default is None.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>use_sample</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[bool]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether to use sampling during generation. Default is
+                         True.</p>
+            </div>
+          </td>
+          <td>
+                <code>True</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>top_k</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[int]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The number of top tokens to consider during sampling. Default
+                   is 250.</p>
+            </div>
+          </td>
+          <td>
+                <code>250</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>top_p</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[float]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The cumulative probability threshold for top-k sampling.
+                     Default is 0.0.</p>
+            </div>
+          </td>
+          <td>
+                <code>0.0</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>temp</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[float]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The temperature value for sampling. Default is 1.</p>
+            </div>
+          </td>
+          <td>
+                <code>1</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>duration</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[int]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The duration of the generated audio in seconds. Default
+                      is 8.</p>
+            </div>
+          </td>
+          <td>
+                <code>8</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>cfg_coef</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[int]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The coefficient for controlling the model configuration.
+                      Default is 3.</p>
+            </div>
+          </td>
+          <td>
+                <code>3</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>progress</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[<span title="typing.Callable">Callable</span>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A callback function to track the progress of
+                          generation. Default is None.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing.Tuple">Tuple</span>[int, <span title="numpy.ndarray">ndarray</span>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Tuple[int, np.ndarray]: A tuple containing the sample rate and the generated
+                    audio waveform.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span>
+<span class="normal">389</span>
+<span class="normal">390</span>
+<span class="normal">391</span>
+<span class="normal">392</span>
+<span class="normal">393</span>
+<span class="normal">394</span>
+<span class="normal">395</span>
+<span class="normal">396</span>
+<span class="normal">397</span>
+<span class="normal">398</span>
+<span class="normal">399</span>
+<span class="normal">400</span>
+<span class="normal">401</span>
+<span class="normal">402</span>
+<span class="normal">403</span>
+<span class="normal">404</span>
+<span class="normal">405</span>
+<span class="normal">406</span>
+<span class="normal">407</span>
+<span class="normal">408</span>
+<span class="normal">409</span>
+<span class="normal">410</span>
+<span class="normal">411</span>
+<span class="normal">412</span>
+<span class="normal">413</span>
+<span class="normal">414</span>
+<span class="normal">415</span>
+<span class="normal">416</span>
+<span class="normal">417</span>
+<span class="normal">418</span>
+<span class="normal">419</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">generate</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">prompt</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+        <span class="n">input_audio</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">use_sample</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">top_k</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="mi">250</span><span class="p">,</span>
+        <span class="n">top_p</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span>
+        <span class="n">temp</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="n">duration</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="n">cfg_coef</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="n">progress</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Generate audio using the model.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        prompt (Optional[str]): The prompt text to generate audio from. Default is an empty</span>
+<span class="sd">                                string.</span>
+<span class="sd">        input_audio (Optional[Tuple[int, np.ndarray]]): The input audio to condition the</span>
+<span class="sd">                                                        generation on. Default is None.</span>
+<span class="sd">        use_sample (Optional[bool]): Whether to use sampling during generation. Default is</span>
+<span class="sd">                                     True.</span>
+<span class="sd">        top_k (Optional[int]): The number of top tokens to consider during sampling. Default</span>
+<span class="sd">                               is 250.</span>
+<span class="sd">        top_p (Optional[float]): The cumulative probability threshold for top-k sampling.</span>
+<span class="sd">                                 Default is 0.0.</span>
+<span class="sd">        temp (Optional[float]): The temperature value for sampling. Default is 1.</span>
+<span class="sd">        duration (Optional[int]): The duration of the generated audio in seconds. Default</span>
+<span class="sd">                                  is 8.</span>
+<span class="sd">        cfg_coef (Optional[int]): The coefficient for controlling the model configuration.</span>
+<span class="sd">                                  Default is 3.</span>
+<span class="sd">        progress (Optional[Callable]): A callback function to track the progress of</span>
+<span class="sd">                                      generation. Default is None.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Tuple[int, np.ndarray]: A tuple containing the sample rate and the generated</span>
+<span class="sd">                                audio waveform.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_model_params</span><span class="p">(</span><span class="n">use_sample</span><span class="p">,</span> <span class="n">top_k</span><span class="p">,</span> <span class="n">top_p</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">cfg_coef</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">progress</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">progress_callback</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+            <span class="n">progress</span><span class="p">((</span><span class="n">p</span><span class="p">,</span> <span class="n">t</span><span class="p">),</span> <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;Generating&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">progress_callback</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_progress_bar_cb</span><span class="p">(</span><span class="n">progress_callback</span><span class="p">)</span>
+
+    <span class="n">input_audio_not_none</span> <span class="o">=</span> <span class="n">input_audio</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+    <span class="k">if</span> <span class="n">input_audio_not_none</span> <span class="ow">and</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pretrained</span> <span class="o">==</span> <span class="s1">&#39;melody&#39;</span><span class="p">):</span>
+        <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">melody_cond_generate</span><span class="p">(</span><span class="n">input_audio</span><span class="p">,</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">input_audio_not_none</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_model_params</span><span class="p">(</span><span class="n">use_sample</span><span class="p">,</span> <span class="n">top_k</span><span class="p">,</span> <span class="n">top_p</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">cfg_coef</span><span class="p">)</span>
+        <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cont_generate</span><span class="p">(</span><span class="n">input_audio</span><span class="p">,</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="ow">not</span> <span class="n">prompt</span><span class="p">:</span>
+        <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uncond_generate</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">text_cond_generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.load_model" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">load_model</span><span class="p">(</span><span class="n">pretrained</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Load a pre-trained model for music generation.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>pretrained</code></td>
+          <td>
+                <code><span title="typing.Literal">Literal</span>[&#39;small&#39;, &#39;medium&#39;, &#39;large&#39;, &#39;melody&#39;]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The size of
+                            the pre-trained model to load. Defaults to None.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>device</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The device to use for model inference. Defaults to None.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>bool</code></td>          <td>
+                <code>bool</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>True if the model is successfully loaded, False otherwise.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">load_model</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">pretrained</span><span class="p">:</span><span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;small&#39;</span><span class="p">,</span><span class="s1">&#39;medium&#39;</span><span class="p">,</span><span class="s1">&#39;large&#39;</span><span class="p">,</span><span class="s1">&#39;melody&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">device</span><span class="p">:</span><span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Load a pre-trained model for music generation.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        pretrained (Literal[&#39;small&#39;,&#39;medium&#39;,&#39;large&#39;,&#39;melody&#39;], optional): The size of</span>
+<span class="sd">                                        the pre-trained model to load. Defaults to None.</span>
+<span class="sd">        device (str, optional): The device to use for model inference. Defaults to None.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if the model is successfully loaded, False otherwise.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">loaded</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">delete_model</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">pretrained</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pretrained</span> <span class="o">=</span> <span class="n">pretrained</span>
+    <span class="k">if</span> <span class="n">device</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">device</span> <span class="o">=</span> <span class="n">device</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">pt_fullname</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;facebook/musicgen-</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">pretrained</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">MusicGen</span><span class="o">.</span><span class="n">get_pretrained</span><span class="p">(</span><span class="n">pt_fullname</span><span class="p">,</span>\
+                                            <span class="n">device</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">device</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loaded</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">load_error</span> <span class="o">=</span> <span class="n">err</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loaded</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">loaded</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.melody_cond_generate" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">melody_cond_generate</span><span class="p">(</span><span class="n">input_audio</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Melody conditional music generation on an input audio with the loaded model.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>input_audio</code></td>
+          <td>
+                <code><span title="typing.Tuple">Tuple</span>[int, <span title="numpy.ndarray">ndarray</span>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The input audio as a tuple of sample
+                                  rate and waveform.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>prompt</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[str]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The prompt for generating the waveform. Defaults to
+                    an empty string.</p>
+            </div>
+          </td>
+          <td>
+                <code>&#39;&#39;</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing.Tuple">Tuple</span>[int, <span title="numpy.ndarray">ndarray</span>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Tuple[int, np.ndarray]: A tuple containing the sample rate and the generated
+                    melody waveform.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ValueError</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>If the model is not loaded.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<details class="note" open>
+  <summary>Note</summary>
+  <ul>
+<li>If no prompt is provided, it will be set to None.</li>
+<li>The input audio will be prepared using the MusicGenerator class.</li>
+<li>The generated melody will be conditioned on the input audio using the model's
+  generate_with_chroma method.</li>
+<li>The generated waveform will be converted to a numpy array.</li>
+</ul>
+</details>
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">melody_cond_generate</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">input_audio</span><span class="p">:</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">],</span>
+        <span class="n">prompt</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Melody conditional music generation on an input audio with the loaded model.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        input_audio (Tuple[int, np.ndarray]): The input audio as a tuple of sample</span>
+<span class="sd">                                              rate and waveform.</span>
+<span class="sd">        prompt (Optional[str]): The prompt for generating the waveform. Defaults to</span>
+<span class="sd">                                an empty string.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Tuple[int, np.ndarray]: A tuple containing the sample rate and the generated</span>
+<span class="sd">                                melody waveform.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValueError: If the model is not loaded.</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        - If no prompt is provided, it will be set to None.</span>
+<span class="sd">        - The input audio will be prepared using the MusicGenerator class.</span>
+<span class="sd">        - The generated melody will be conditioned on the input audio using the model&#39;s</span>
+<span class="sd">          generate_with_chroma method.</span>
+<span class="sd">        - The generated waveform will be converted to a numpy array.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Model must be loaded first&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">prompt</span><span class="p">:</span>
+        <span class="n">prompt</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="n">MusicGenerator</span><span class="o">.</span><span class="n">prepare_input_audio</span><span class="p">(</span><span class="n">input_audio</span><span class="p">)</span>
+    <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="p">[</span><span class="kc">None</span><span class="p">]</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1"># Generate music based on melody of existing clip (`wav`) and prompt</span>
+    <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">generate_with_chroma</span><span class="p">([</span><span class="n">prompt</span><span class="p">],</span> <span class="n">wav</span><span class="p">,</span>\
+                                          <span class="n">sample_rate</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.prepare_input_audio" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">prepare_input_audio</span><span class="p">(</span><span class="n">input_audio</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Prepares the input audio for further processing.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>input_audio</code></td>
+          <td>
+                <code><span title="typing.Tuple">Tuple</span>[int, <span title="numpy.ndarray">ndarray</span>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A tuple containing the sample
+                                            rate and waveform of the input
+                                            audio. Defaults to None.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing.Tuple">Tuple</span>[int, <span title="numpy.ndarray">ndarray</span>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Tuple[int, np.ndarray]: A tuple containing the sample rate and processed
+                    waveform.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<details class="note" open>
+  <summary>Note</summary>
+  <ul>
+<li>If <code>input_audio</code> is not provided, the function returns a tuple with sample
+  rate 0 and waveform None.</li>
+<li>If <code>input_audio</code> is provided, the function converts the waveform to a torch
+  tensor and performs additional processing if necessary.</li>
+</ul>
+</details>
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@staticmethod</span>
+<span class="k">def</span> <span class="nf">prepare_input_audio</span><span class="p">(</span>
+        <span class="n">input_audio</span><span class="p">:</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Prepares the input audio for further processing.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        input_audio (Tuple[int, np.ndarray], optional): A tuple containing the sample</span>
+<span class="sd">                                                        rate and waveform of the input</span>
+<span class="sd">                                                        audio. Defaults to None.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Tuple[int, np.ndarray]: A tuple containing the sample rate and processed</span>
+<span class="sd">                                waveform.</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        - If `input_audio` is not provided, the function returns a tuple with sample</span>
+<span class="sd">          rate 0 and waveform None.</span>
+<span class="sd">        - If `input_audio` is provided, the function converts the waveform to a torch</span>
+<span class="sd">          tensor and performs additional processing if necessary.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">input_audio</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="n">input_audio</span>
+        <span class="n">wav</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">wav</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">wav</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">torch</span><span class="o">.</span><span class="n">int16</span><span class="p">:</span>
+            <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">float</span><span class="p">()</span> <span class="o">/</span> <span class="mf">32767.0</span>
+        <span class="k">if</span> <span class="n">wav</span><span class="o">.</span><span class="n">dim</span><span class="p">()</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">wav</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span>
+
+    <span class="k">return</span> <span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.reset_progress_bar" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">reset_progress_bar</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Resets the progress bar.</p>
+<p>This function resets the progress bar by setting the total value to 1 and updating the
+description to 'Generating'.</p>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>None</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>None</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span>
+<span class="normal">93</span>
+<span class="normal">94</span>
+<span class="normal">95</span>
+<span class="normal">96</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">reset_progress_bar</span><span class="p">(</span>
+        <span class="bp">self</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Resets the progress bar.</span>
+
+<span class="sd">    This function resets the progress bar by setting the total value to 1 and updating the</span>
+<span class="sd">    description to &#39;Generating&#39;.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pbar</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">dynamic_ncols</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>\
+                     <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;Generating&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.set_model_params" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">set_model_params</span><span class="p">(</span><span class="n">use_sample</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">top_p</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">temp</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">cfg_coef</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Sets the parameters for generating music using the model.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>use_sample</code></td>
+          <td>
+                <code>bool</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Use sampling if True, else do argmax decoding. Defaults to True.</p>
+            </div>
+          </td>
+          <td>
+                <code>True</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>top_k</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Top-k is a setting in text and music generation models that limits the
+         number of choices (tokens) the model considers at each step. A smaller
+         top-k leads to more predictable outputs, while a larger top-k allows
+         for more variety. Defaults to 250.</p>
+            </div>
+          </td>
+          <td>
+                <code>250</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>top_p</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Top-p, also called nucleus sampling, is a method in text generation
+           where the model chooses from a set of tokens based on their combined
+           likelihood, ensuring a balance between diversity and coherence in
+           the output. Unlike top-k, which picks a fixed number of tokens,
+           top-p's selection varies based on their probabilities. Defaults to
+           0.0, when set to 0 top_k is used.</p>
+            </div>
+          </td>
+          <td>
+                <code>0.0</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>temp</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Softmax temperature parameter. In music generation, the temperature
+          setting controls how predictable or varied the music is. A higher
+          temperature results in more random and diverse music, while a lower
+          temperature creates more consistent and less varied music. Defaults
+          to 1.0.</p>
+            </div>
+          </td>
+          <td>
+                <code>1</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>duration</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Duration of the generated waveform. Defaults to 30.0.</p>
+            </div>
+          </td>
+          <td>
+                <code>8</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>cfg_coef</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Coefficient used for classifier free guidance. This technique in
+            music generation uses an additional classifier network to guide
+            the music creation process towards specific characteristics or
+            styles. It provides more detailed control, allowing users to
+            influence the style and features of the generated music. Defaults
+            to 3.0.</p>
+            </div>
+          </td>
+          <td>
+                <code>3</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ValueError</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>If the model is not loaded.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>None</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>None</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">set_model_params</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">use_sample</span><span class="p">:</span><span class="nb">bool</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">top_k</span><span class="p">:</span><span class="nb">int</span> <span class="o">=</span> <span class="mi">250</span><span class="p">,</span>
+        <span class="n">top_p</span><span class="p">:</span><span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span>
+        <span class="n">temp</span><span class="p">:</span><span class="nb">float</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="n">duration</span><span class="p">:</span><span class="nb">int</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="n">cfg_coef</span><span class="p">:</span><span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets the parameters for generating music using the model.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        use_sample (bool): Use sampling if True, else do argmax decoding. Defaults to True.</span>
+<span class="sd">        top_k (int): Top-k is a setting in text and music generation models that limits the</span>
+<span class="sd">                     number of choices (tokens) the model considers at each step. A smaller</span>
+<span class="sd">                     top-k leads to more predictable outputs, while a larger top-k allows</span>
+<span class="sd">                     for more variety. Defaults to 250.</span>
+<span class="sd">        top_p (float): Top-p, also called nucleus sampling, is a method in text generation</span>
+<span class="sd">                       where the model chooses from a set of tokens based on their combined</span>
+<span class="sd">                       likelihood, ensuring a balance between diversity and coherence in</span>
+<span class="sd">                       the output. Unlike top-k, which picks a fixed number of tokens,</span>
+<span class="sd">                       top-p&#39;s selection varies based on their probabilities. Defaults to</span>
+<span class="sd">                       0.0, when set to 0 top_k is used.</span>
+<span class="sd">        temp (float): Softmax temperature parameter. In music generation, the temperature</span>
+<span class="sd">                      setting controls how predictable or varied the music is. A higher</span>
+<span class="sd">                      temperature results in more random and diverse music, while a lower</span>
+<span class="sd">                      temperature creates more consistent and less varied music. Defaults</span>
+<span class="sd">                      to 1.0.</span>
+<span class="sd">        duration (int): Duration of the generated waveform. Defaults to 30.0.</span>
+<span class="sd">        cfg_coef (int): Coefficient used for classifier free guidance. This technique in</span>
+<span class="sd">                        music generation uses an additional classifier network to guide</span>
+<span class="sd">                        the music creation process towards specific characteristics or</span>
+<span class="sd">                        styles. It provides more detailed control, allowing users to</span>
+<span class="sd">                        influence the style and features of the generated music. Defaults</span>
+<span class="sd">                        to 3.0.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValueError: If the model is not loaded.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Model must be loaded first&quot;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">set_generation_params</span><span class="p">(</span><span class="n">use_sample</span><span class="p">,</span> <span class="n">top_k</span><span class="p">,</span> <span class="n">top_p</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span>\
+                                        <span class="n">duration</span><span class="p">,</span> <span class="n">cfg_coef</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.set_progress_bar_cb" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">set_progress_bar_cb</span><span class="p">(</span><span class="n">callback</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Sets the progress bar callback function.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>callback</code></td>
+          <td>
+                <code><span title="typing.Callable">Callable</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The callback function to be set. Defaults to None.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>None</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>None</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<details class="example" open>
+  <summary>Example</summary>
+  <p>set_progress_bar_cb(callback=my_callback_function)</p>
+</details>
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">set_progress_bar_cb</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">callback</span><span class="p">:</span><span class="n">Callable</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Sets the progress bar callback function.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        callback (Callable, optional): The callback function to be set. Defaults to None.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        set_progress_bar_cb(callback=my_callback_function)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">callback</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reset_progress_bar</span><span class="p">()</span>
+        <span class="n">callback</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cb_progress_bar</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">set_custom_progress_callback</span><span class="p">(</span><span class="n">callback</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.text_cond_generate" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">text_cond_generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Text conditional music generation using the loaded model.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>prompt</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The prompt text for generating the waverform.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing.Tuple">Tuple</span>[int, <span title="numpy.ndarray">ndarray</span>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Tuple[int, np.ndarray]: A tuple containing the sample rate and the generated
+                    waveform as a numpy array.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ValueError</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>If the model is not loaded.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">text_cond_generate</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">prompt</span><span class="p">:</span><span class="nb">str</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Text conditional music generation using the loaded model.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        prompt (str): The prompt text for generating the waverform.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Tuple[int, np.ndarray]: A tuple containing the sample rate and the generated</span>
+<span class="sd">                                waveform as a numpy array.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValueError: If the model is not loaded.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Model must be loaded first&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Generate music based on prompt</span>
+    <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">generate</span><span class="p">([</span><span class="n">prompt</span><span class="p">],</span> <span class="n">progress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="music_generation.music_gen.MusicGenerator.uncond_generate" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">uncond_generate</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Generates music unconditionally.</p>
+<p>This function generates music unconditionally using a pre-loaded model. It returns the
+sample rate and the generated waveform.</p>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing.Tuple">Tuple</span>[int, <span title="numpy.ndarray">ndarray</span>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Tuple[int, np.ndarray]: A tuple containing the sample rate (int) and the generated
+                    waveform (np.ndarray).</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ValueError</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>If the model is not loaded.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>music_generation/music_gen.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">uncond_generate</span><span class="p">(</span>
+        <span class="bp">self</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Generates music unconditionally.</span>
+
+<span class="sd">    This function generates music unconditionally using a pre-loaded model. It returns the</span>
+<span class="sd">    sample rate and the generated waveform.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Tuple[int, np.ndarray]: A tuple containing the sample rate (int) and the generated</span>
+<span class="sd">                                waveform (np.ndarray).</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValueError: If the model is not loaded.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Model must be loaded first&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Generate music unconditionally (based on nothing)</span>
+    <span class="n">wav</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">generate_unconditional</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">wav</span> <span class="o">=</span> <span class="n">wav</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">sample_rate</span><span class="p">,</span> <span class="n">wav</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>
