@@ -1,0 +1,13 @@
+site_name: Documentation to Music Gen AI App
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - Music Gen AI App Docs: index.md
+  - Reference:
+    - Utils: reference/utils.md
+    - MusicGen: reference/music_gen.md

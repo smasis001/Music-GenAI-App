@@ -84,7 +84,7 @@ python scripts/extract_from_youtube.py https://youtu.be/t139Vd83pgs
 python scripts/extract_from_youtube.py https://youtu.be/bklB0Q13iNI
 ```
 
-### Run Web App (locally)
+### Run Web App (locally) and through SSH tunnel
 
 To see the music generation system work via browser, run:
 
@@ -92,12 +92,12 @@ To see the music generation system work via browser, run:
 python webapp/app.py
 ```
 
-It should open a `gradio.live` address in your default browser. But if it doesn't, try [http://127.0.0.1:7860/](http://127.0.0.1:7860/).
+It should open a `gradio.live` address (via tunnel) in your default browser. But if it doesn't, try [http://127.0.0.1:7860/](http://127.0.0.1:7860/).
 
 
 When done using it, press ctrl-C to stop the webapp in your command line.
 
-### Run Desktop App (locally)
+### Run Scripts (locally)
 
 To demo text-conditional music generation with Python, run:
 

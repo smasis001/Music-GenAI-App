@@ -14,7 +14,7 @@ OUTPUT_DIR_PATH = os.path.join(os.path.dirname(__file__),\
 
 def download_audio_from_youtube(
         url:str
-    ):
+    ) -> str:
     """Downloads audio from a YouTube video given its URL.
 
     Args:

@@ -1,0 +1,12 @@
+version: "3.11"
+services:
+  localstack:
+    image: localstack/localstack:1.4
+    restart: always
+    ports:
+      - '4510-4559:4510-4559'
+      - '4566:4566'
+    environment:
+      SERVICES: s3
+      DEBUG: 1
+      DATA_DIR: /tmp/localstack/data

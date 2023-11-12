@@ -69,9 +69,6 @@ class MusicGenerator:
         CUDA cache, and resets the device, model, loaded flag, load error, and progress
         bar attributes.
 
-        Args:
-            self: The instance of the class.
-
         Returns:
             None
         """
@@ -92,9 +89,6 @@ class MusicGenerator:
         This function resets the progress bar by setting the total value to 1 and updating the
         description to 'Generating'.
 
-        Args:
-            self: The instance of the class.
-
         Returns:
             None
         """
@@ -111,9 +105,6 @@ class MusicGenerator:
             callback (Callable, optional): The callback function to be set. Defaults to None.
 
         Returns:
-            None
-
-        Raises:
             None
 
         Example:
