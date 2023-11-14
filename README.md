@@ -34,17 +34,19 @@ For technical documentation of code under `music_generation` please refer to [gi
 
 ### Install Basic Requirements
 
-You'll need Python 3.10 and above, and GIT. On Windows, the best way is via the [Python website](https://python.org/downloads/windows/) and [GIT website](https://git-scm.com/downloads/win). On other operating systems command line options are the easiest:
+You'll need Python 3.10 and above, ffmpeg, and GIT. On Windows, the best way is via the [Python website](https://python.org/downloads/windows/), [ffpmeg website](https://ffmpeg.org/download.html) and [GIT website](https://git-scm.com/downloads/win). On other operating systems command line options might be the easiest:
 
 **MacOs**:
 
 ```sh
-brew install python git
+brew install python git ffmpeg
 ```
+(assuming you have brew installed)
+
 **Linux**:
 
 ```sh
-sudo apt install python3 python-is-python3 git
+sudo apt install python3 python-is-python3 git ffmpeg
 ```
 
 It is recommended that you open the folder where this repository will be cloned with an IDE like VSCode or PyCharm.
