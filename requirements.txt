@@ -1,4 +1,4 @@
 xformers==0.0.22.post7 # --no-use-pep517
 git+https://github.com/facebookresearch/audiocraft.git
-ffmpeg-python=~0.2.0
-pytube=~15.0.0
+ffmpeg-python~=0.2.0
+ytube~=15.0.0
