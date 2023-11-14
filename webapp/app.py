@@ -43,6 +43,7 @@ def generate(
     Example:
         output, waveform = generate("Piano", (44100, audio), 5, 0.8, 0.5, 60)
     """
+    global music_gen
     output = music_gen.generate(prompt_, input_audio_, True, top_k_, top_p_, temp_, duration_,\
                                 progress=progress_)
     if isinstance(output, str):
@@ -64,6 +65,7 @@ def load_model(model) -> str:
     Raises:
         gr.Error: If the model fails to load.
     """
+    global music_gen
     if music_gen is None:
         music_gen = MusicGenerator(model)
     if not music_gen.load_model(model):
@@ -78,13 +80,14 @@ def unload_model() -> str:
     Returns:
         str: An empty string indicating the successful unloading of the model.
     """
+    global music_gen
     if music_gen is not None:
         music_gen.delete_model()
     return ''
 
 with gr.Blocks() as demo:
     gr.Markdown("# Music Generative AI App")
-    gr.Markdown("First select and **load*** a model. Then fill other fields and click **Generate**"
+    gr.Markdown("First select and **load*** a model. Then fill other fields and click **Generate**"\
                 "to see the output.")
 
     with gr.Row():
@@ -100,17 +103,17 @@ with gr.Blocks() as demo:
     with gr.Row():
         with gr.Column():
             prompt = gr.TextArea(label='Prompt', info='Put the audio you want here.',
-                                     placeholder='Something like: "happy rock", "energetic EDM"'
+                                     placeholder='Something like: "happy rock", "energetic EDM"'\
                                         'or "sad jazz"\nLonger descriptions are also supported.')
             duration = gr.Number(5, label='Duration (s)',\
                                  info='Duration for the generation in seconds.')
-            input_audio = gr.Audio(label='Input audio (structure for melody, continuation for '
+            input_audio = gr.Audio(label='Input audio (structure for melody, continuation for '\
                                          'others)')
             with gr.Row():
                 top_k = gr.Slider(label='top_k', minimum=0, value=250, maximum=10000, step=1,
                                   info='Higher number = more possible tokens, 0 to disable')
                 top_p = gr.Slider(label='top_p', minimum=0, value=0, maximum=1, step=0.01,
-                                  info='Higher number = more possible tokens, 0 to use top_k '
+                                  info='Higher number = more possible tokens, 0 to use top_k '\
                                        'instead')
             temp = gr.Slider(label='temperature', minimum=0, value=1, maximum=2,
                              info='Higher number = more randomness for picking the next token')

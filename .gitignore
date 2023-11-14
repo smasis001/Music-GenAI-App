@@ -186,11 +186,6 @@ docs/docs/python/constants.txt
 **/.vscode
 **/.venv
 **/venv
-data/ouputs/*.mp3
-data/ouputs/*.wav
-data/inputs/*.mp3
-data/inputs/*.wav
 
 .DS_store
 **/.DS_store
-test.sh
